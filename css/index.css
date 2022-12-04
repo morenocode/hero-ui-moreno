@@ -1,0 +1,137 @@
+
+:root { 
+--white: #ffffff; 
+--black-1: #181818; 
+--primary: #1b90fc; 
+--grey: #929292; 
+--headline1: @import url(//db.onlinewebfonts.com/c/0d5f8cc3c1312e1f7c94b4ccf48733c0?family=Netflix+Sans+Icon);
+--subtitle1: 700 1.625rem/1.5rem Roboto Condensed; 
+--button: 700 0.875rem/1rem Roboto; 
+--headline2: 700 1.5rem/normal Roboto Condensed; 
+--body1-regular: 400 1rem/1.5rem Roboto; 
+--body1-bold: 700 1rem/1.5rem Roboto; 
+--body2-bold: 700 0.875rem/1.5rem Roboto; 
+--body2-regular: 400 0.875rem/1.5rem Roboto; 
+--caption-regular: 400 0.75rem/1.5rem Roboto; 
+--caption-bold: 700 0.75rem/1.5rem Roboto; 
+ 
+}
+
+body {
+  color: var(--primary);
+  font: var(--body1-regular);
+  margin: 0;
+  /* border: 10px solid green */
+}
+
+h1{
+  font: var(--headline1);
+}
+
+h2{
+  font: var(--headline2);
+}
+
+h3{
+  font: var(--headline1);
+}
+
+.wrapper {
+  max-inline-size: 1664px;
+  margin: auto;
+  /* border: 1px solid red;
+  background-color: pink; */
+  overflow: hidden;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+.hero-content h1 {
+  font-family: var(--headline1);
+  font-size: 40px; 
+  margin-block-end: 8px;
+  /* padding: 20px; */
+}
+
+.hero-content p {
+  font-family: var(--headline1);
+  font-size: 24px;
+  padding-block: 16px;
+  /* padding-inline: 32px; */
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-block-end: 24px;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--white);
+  padding-block: 16px;
+  padding-inline: 32px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.hero-content{
+ display: flex;
+ block-size: 768px;
+ align-items: center;
+ /* background-color: darkcyan; */
+}
+
+.title-info-metadata-wrapper {
+  color: var(--grey);
+  padding-block: 16px;
+}
+
+.title-info-metadata-wrapper .titulo-dos{
+  color: white;
+  font-size: 40px;
+}
+
+.card {
+  max-inline-size: 412px;
+  color: var(--white);
+  z-index: 2;
+  position: relative;
+  padding-block: 16px;
+  padding-inline: 32px;
+}
+
+.hero::before {
+  content: "";
+  inline-size: 50%;
+  display: block;
+  background: var(--black-1);
+  position: absolute;
+  inset-block: 0;
+  z-index: 1;
+  clip-path: polygon(0 0, calc(100% - 151px) 0, 100% 100%, 0 100%);
+}
+
+.hero {
+  
+  /* border: 1px solid rebeccapurple;   */
+  background-color: var(--black-1);
+  background-image: url("../images/img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 128px), 0 100%);
+  /* background-size: cover; */
+}
+
+
